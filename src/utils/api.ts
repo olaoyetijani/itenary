@@ -71,8 +71,8 @@ export const searchFlights = async (
     const segment = offer.segments?.[0]; // First segment
     const leg = segment?.legs?.[0]; // First leg
 
-    const departureAirport = segment?.departureAirport?.name || "";
-    const arrivalAirport = segment?.arrivalAirport?.name || "";
+    // const departureAirport = segment?.departureAirport?.name || "";
+    // const arrivalAirport = segment?.arrivalAirport?.name || "";
     const departureTime = segment?.departureTime || "";
     const arrivalTime = segment?.arrivalTime || "";
     const departureAirportCode = segment?.departureAirport?.code || "";

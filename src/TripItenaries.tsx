@@ -52,7 +52,7 @@ const TripItenaries = () => {
                 departureTime,
                 arrivalTime,
                 price,
-                code,
+                // code,
                 cabinClass,
                 airplaneNo,
                 date,

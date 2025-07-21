@@ -2,7 +2,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { useState } from "react";
 import { useItinerary } from "./context/ItenaryContext";
-import type { Hotel, HotelSearchParams } from "./utils/types";
+import type { Hotel } from "./utils/types";
 import { searchDestination, searchHotels } from "./utils/api";
 
 export const AddHotel: React.FC = () => {
