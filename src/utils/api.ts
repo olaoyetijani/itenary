@@ -56,7 +56,8 @@ export const searchFlights = async (
   const res = await fetch(url, {
     method: "GET",
     headers: {
-      "x-rapidapi-key": "f513ceac66msh9767d00f1625675p11d87ejsn04bd612b3060",
+      // "x-rapidapi-key": "f513ceac66msh9767d00f1625675p11d87ejsn04bd612b3060",
+      "x-rapidapi-key": import.meta.env.VITE_RAPIDAPI_KEY || "",
       "X-RapidAPI-Host": "booking-com15.p.rapidapi.com",
     },
   });
@@ -124,7 +125,8 @@ export const searchAirports = async (query: string): Promise<Airport[]> => {
     {
       method: "GET",
       headers: {
-        "x-rapidapi-key": "f513ceac66msh9767d00f1625675p11d87ejsn04bd612b3060",
+        // "x-rapidapi-key": "f513ceac66msh9767d00f1625675p11d87ejsn04bd612b3060",
+        "x-rapidapi-key": import.meta.env.VITE_RAPIDAPI_KEY || "",
         "X-RapidAPI-Host": "booking-com15.p.rapidapi.com",
       },
     }
@@ -140,7 +142,8 @@ export const searchDestination = async (query: string) => {
   const res = await fetch(url, {
     method: "GET",
     headers: {
-      "x-rapidapi-key": "c4f478ad21msh042189f978c793dp1d2b03jsnae96d38a15e5",
+      // "x-rapidapi-key": "c4f478ad21msh042189f978c793dp1d2b03jsnae96d38a15e5",
+      "x-rapidapi-key": import.meta.env.VITE_RAPIDAPI_KEY || "",
       "X-RapidAPI-Host": "booking-com15.p.rapidapi.com",
     },
   });
@@ -158,7 +161,8 @@ export const searchHotels = async (
   const res = await fetch(url, {
     method: "GET",
     headers: {
-      "x-rapidapi-key": "c4f478ad21msh042189f978c793dp1d2b03jsnae96d38a15e5",
+      // "x-rapidapi-key": "c4f478ad21msh042189f978c793dp1d2b03jsnae96d38a15e5",
+      "x-rapidapi-key": import.meta.env.VITE_RAPIDAPI_KEY || "",
       "X-RapidAPI-Host": "booking-com15.p.rapidapi.com",
     },
   });
